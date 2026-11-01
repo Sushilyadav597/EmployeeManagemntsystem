@@ -1,5 +1,5 @@
 <hibernate-mapping>
-<class name="com.jsp.employee.Employee" table="emp">
+   <class name="org.jsp.employee.Employee" table="emp">
 <id name="id" column="e_id">
 	 <generator class="identity"/>    
 	<!-- <generator class="assigned"/> -->         
@@ -12,3 +12,4 @@
 <property name="password" column="e_pass"/>
 </class>
 </hibernate-mapping>
+
