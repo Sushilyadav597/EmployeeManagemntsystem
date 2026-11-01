@@ -1,6 +1,16 @@
 package org.jsp.employee;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "employee")
 public class Employee {
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
 private int id;
 private String name;
 private long phone;
@@ -55,7 +65,7 @@ public void setPassword(String password) {
 
 @Override
 public String toString() {
-	return id + " " + name + " " + phone + " " + email 
+	return id + " " + name + " " + phone + " " + email
 			+ " " + designation + " "+salary
 			;
 }
