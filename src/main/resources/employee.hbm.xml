@@ -1,0 +1,14 @@
+<hibernate-mapping>
+<class name="com.jsp.employee.Employee" table="emp">
+<id name="id" column="e_id">
+	 <generator class="identity"/>    
+	<!-- <generator class="assigned"/> -->         
+</id>
+<property name="name" column="e_name"/>
+<property name="phone" column="e_phone"/>
+<property name="email" column="e_email"/>
+<property name="designation" column="e_job"/>
+<property name="salary" column="e_sal"/>
+<property name="password" column="e_pass"/>
+</class>
+</hibernate-mapping>
